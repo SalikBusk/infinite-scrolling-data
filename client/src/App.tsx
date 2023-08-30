@@ -1,9 +1,6 @@
 import React from 'react';
 import './App.css';
 
-
-import { QueryClientProvider } from '@tanstack/react-query';
-
 import {
   createBrowserRouter,
   Outlet,
@@ -25,7 +22,7 @@ const route = createBrowserRouter([
   {
     path: "/infinite",
     element: <Infinite />
-  }
+  },
 ]) 
 
 function App() {
