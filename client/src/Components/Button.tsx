@@ -1,0 +1,50 @@
+import React from 'react'
+
+import { IconType } from "react-icons";
+
+interface ButtonProps {
+  label: string;
+  onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
+  disabled?: boolean;
+  outline?: boolean;
+  small?: boolean;
+  icon?: IconType;
+}
+
+const Button: React.FC<ButtonProps> = ({ 
+  label, 
+  onClick, 
+  disabled, 
+  outline,
+  small,
+  icon: Icon,
+}) => {
+  return ( 
+    <button
+      disabled={disabled}
+      onClick={onClick}
+      className={`
+        relative
+        disabled:opacity-70
+        disabled:cursor-not-allowed
+        rounded-full
+        hover:opacity-80
+        transition
+        w-full
+        ${outline ? 'bg-white ' : 'hover:bg-slate-200'}
+        ${outline ? 'border-black border-[1px] ' : 'hover:bg-slate-200'}
+        ${outline ? 'text-black ' : 'hover:bg-slate-200'}
+        ${outline ? 'px-[20px] py-[5px]' : 'px-[20px] py-[10px]'}
+      `}
+    >
+      {Icon && (
+        <Icon
+          size={24}
+        />
+      )}
+      {label}
+    </button>
+   );
+}
+ 
+export default Button;
