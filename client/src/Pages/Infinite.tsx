@@ -52,16 +52,16 @@ const Infinite = () => {
 
   return (
     <div className="w-full flex flex-col gap-5 items-center justify-center">
-      <h1 className="text-5xl">posts:</h1>
+      <h1 className="text-2xl">posts:</h1>
       <div className="flex flex-col gap-5">
         {_posts?.map((post, i) => {
-          if (i === _posts.length)
+          if (i === _posts.length - 1)
             return (
-              <div className="h-80" key={post.id} ref={ref}>
+              <div className="w-full h-80 bg-black text-white" key={post.id} ref={ref}>
                 {post.title}
               </div>
             );
-          return <div className="h-80" key={post.id}>{post.title}</div>;
+          return <div className="h-80 bg-black" key={post.id}>{post.title}</div>;
         })}
       </div>
       <button onClick={() => fetchNextPage()} disabled={isFetchingNextPage}>
