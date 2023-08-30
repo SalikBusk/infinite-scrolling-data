@@ -7,12 +7,15 @@ import Heading from '../Components/Heading';
 const Index = () => {
   const navigated = useNavigate();
   return (
-    <main className='w-full h-screen flex flex-col gap-5 justify-center items-center'>
-      <Heading title='Infinite & Pagination' subtitle='React Komponent' center/>
+    <main>
+      <section className='w-full h-screen flex flex-col gap-5 justify-center items-center'>
+        <Heading title='Infinite & Pagination' subtitle='React Komponent' center/>
       <div className='flex flex-row gap-[10px] items-center'>
         <Button label='Pagination' onClick={() => navigated('/pagination')} outline/>
         <Button label='Infinite' onClick={() => navigated('/infinite')} outline/>
+        <Button label='Viewport' onClick={() => navigated('/Viewport')} outline/>
       </div>
+      </section>
     </main>
   );
 };
