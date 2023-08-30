@@ -13,6 +13,9 @@ Pagination er en metode, hvor en stor liste af data opdeles i mindre sektioner k
 
 For at implementere sideopdeling i ReactJS opretter du normalt en komponent, der styrer den aktuelle side og antallet af elementer pr. side. Når brugeren skifter side, opdateres komponenten med det nye datasæt, der skal vises.
 
+### Lazy Loading Gallery Infinite Scroll
+Denne komponent implementerer en galleri-visning af billeder med en "lazys indlæsning" (lazy loading) tilgang ved hjælp af Intersection Observer-teknikken. Billederne indlæses kun, når de kommer ind i brugerens synlige område. Samtidig inkluderer komponenten også "uendelig rulle" funktionalitet, der automatisk indlæser flere billeder, når brugeren scroller ned gennem galleriet.
+
 ## Brug
     npm i @tanstack/react-query
     npm i @mantine/hooks
