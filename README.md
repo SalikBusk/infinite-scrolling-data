@@ -1,5 +1,5 @@
 # infinite scrolling data
-"Infinite" og "Pagination" er begge til metoder til at håndtere visning af store lister af data på en brugergrænseflade.
+"Infinite" og "Pagination" er begge metoder til at håndtere visning af store lister af data på en brugergrænseflade.
 
 ### Infinite Scroll (Uendelig rulle):
 
