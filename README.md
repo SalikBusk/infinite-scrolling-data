@@ -1,6 +1,12 @@
 # infinite scrolling data
 "Infinite" og "Pagination" er begge metoder til at håndtere visning af store lister af data på en brugergrænseflade.
 
+#### Fordele i forhold til netværket:
+1. Reduceret indlæsningstid: Ved at indlæse data løbende, når brugeren scroller, kan du reducere indlæsningstiden for siden i starten. Dette kan forbedre brugeroplevelsen, da brugere ikke behøver at vente på, at hele siden indlæses, før de kan begynde at udforske indholdet.
+
+2. Lavere initiel belastning: Kun en lille mængde data indlæses først, hvilket resulterer i en mindre initial belastning på netværket og serveren. Dette kan være gavnligt, hvis brugere ikke altid udforsker hele datalisten.
+
+
 ### Infinite Scroll (Uendelig rulle):
 
 Infinite Scroll er en teknik, hvor nye elementer indlæses automatisk, når brugeren scroller nedad på en liste eller en side. Dette skaber en glidende og kontinuerlig oplevelse for brugeren, da de ikke behøver at klikke på en separat "Næste side" eller "Indlæs mere" knap for at se mere indhold. I stedet hentes nye data, når brugeren nærmer sig slutningen af den nuværende liste.
